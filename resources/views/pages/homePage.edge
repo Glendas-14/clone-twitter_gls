@@ -1,0 +1,44 @@
+
+@include('partials/header')
+<div>
+  {{--  logo x  --}}
+  <div class="h-10 w-10 md:w-32"  >
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-full w-full text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </div>
+  <div class="bg-black text-white min-h-screen flex justify-center items-center">
+    <div class="w-full max-w-md">
+      <div class="text-4xl font-bold mb-8 text-center">Happening now</div>
+      <div class="mb-8 flex flex-col gap-4">
+        <button class="bg-white hover:bg-gray-200 text-black font-bold py-2 px-4 rounded-full mr-4 flex items-center justify-center">
+          <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-icon-png-transparent-background-osteopathy-16.png" alt="Google logo" class="w-6 h-6 mr-2" />
+          Sign up with Google
+        </button>
+        <button class="bg-white hover:bg-gray-200 text-black font-bold py-2 px-4 rounded-full mr-4 flex items-center justify-center">
+          <i class="fab fa-apple mr-2 text-xl"></i>
+          Sign up with Apple
+        </button>
+      </div>
+      <div class="mb-2 flex flex-col gap-2">
+        <p class="mb-2 text-center ">or</p>
+        <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">
+          <a href="/register">Create account</a>
+        </button>
+        <p>By signing up, you agree to the <a href="" class="text-sky-400">Terms of Service</a> and <a href="http://" class="text-sky-400">Privacy Plicy,</a> including <a href="" class="text-sky-400">Cookie Use.</a>
+        </p>
+      </div>
+      <div class="text-gray-400 text-center flex flex-col">
+        Already have an account?
+        <div class="hover:bg-gray-200 text-white font-bold py-2 px-4 border border-slate-400 rounded-full flex items-center justify-center">
+          <button class="text-blue-500 hover:text-blue-600 font-bold ">
+            <a href="/login">Sign in</a>
+          </button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+    
+ @include('partials/header')
